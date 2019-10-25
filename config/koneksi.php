@@ -7,4 +7,7 @@ function koneksi ($host, $user, $pass, $db) {
     }
     return $koneksi;
 }
+
+// add call function
+koneksi("localhost", "root", "", "warifp");
 ?>
