@@ -8,6 +8,6 @@ if (isset($_GET['id'])) {
 
         $koneksi = koneksi("localhost", "root", "", "pelatihan");
         deleteSiswa($id, $koneksi);
-           
+        header("location:../../../");
     }
 }
