@@ -5,6 +5,8 @@ function simpanSiswa($input, $koneksi) {
     {
         return true;
     } else {
+        print_r($input);
+        echo mysqli_error($koneksi);
         return false;
     }
 }
@@ -23,6 +25,8 @@ function dataSiswa($koneksi) {
     if ($query = mysqli_query($koneksi, "select * from siswa")) {
         return $query;
     } else {
+        print_r($input);
+        echo mysqli_error($koneksi);
         return false;
     }
 }
@@ -31,6 +35,8 @@ function deleteSiswa($id, $koneksi) {
     if ($query = mysqli_query($koneksi, "delete from siswa where id=$id")) {
         return $query;
     } else {
+        print_r($input);
+        echo mysqli_error($koneksi);
         return false;
     }
 }
@@ -39,6 +45,8 @@ function getSiswa($id, $koneksi) {
     if ($query = mysqli_query($koneksi, "select * from siswa where id=$id")) {
         return $query;
     } else {
+        print_r($input);
+        echo mysqli_error($koneksi);
         return false;
     }
 }
