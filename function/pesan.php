@@ -1,8 +1,12 @@
 <?php
 function pesan_sukses($msg) {
-    echo "<p>" . $msg . "</p>";
+    echo "<p style 'color = 'green'>";
+    echo $msg;
+    echo "</p>";
 }
 
 function pesan_gagal($msg) {
-    echo "<p>" . $msg . "</p>";
+    echo "<p style 'color = 'red'>";
+    echo $msg;
+    echo "</p>";
 }
